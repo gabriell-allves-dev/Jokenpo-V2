@@ -1,6 +1,10 @@
 import random
+import time
 
-print('='*6 + 'JOKENPÔ - v2' + '='*6)
+green = '\033[1;32m'
+red = '\033[1;31m'
+
+print(f'{green}='*6 + 'JOKENPÔ - v2' + '='*6)
 
 print('\n[1] - J1 VS COM')
 print('[2] - J1 VS J2')
@@ -34,7 +38,7 @@ while True:
                 break
 
             else:
-                print('Valor inválido!')
+                print(f'{red}Valor inválido!{green}')
                 continue
 
         computador = random.randint(1,3)
@@ -62,7 +66,7 @@ while True:
             print('\nVOCÊ VENCEU!')
 
         else:
-            print('\nVOCÊ PERDEU!')
+            print(f'\n{red}VOCÊ PERDEU!{green}')
 
 
 
@@ -107,7 +111,7 @@ while True:
                     break
 
                 else:
-                    print('\nValor inválido!')
+                    print(f'\n{red}Valor inválido!{green}')
 
             while True:
                 print('\n' + '='*6 + 'Escolha do jogador 2' + '='*6)
@@ -131,7 +135,7 @@ while True:
                     break
 
                 else:
-                    print('\nValor inválido!')
+                    print(f'\n{red}Valor inválido!{green}')
 
             if escolha_J1 == escolha_J2:
                 print('\nEMPATE!')
@@ -159,5 +163,5 @@ while True:
 
 # Encerrar execução
     elif opcao == 3:
-        print('AVISO: EM PRODUÇÃO!') 
+        print(f'{red}AVISO: EM PRODUÇÃO!{green}') 
         break

@@ -55,9 +55,9 @@ while True:
         if escolha_J1 == escolha_com:
             print('\nEMPATE!')
 
-        elif (escolha_J1 == 1 and escolha_com == 3) or \
-            (escolha_J1 == 2 and escolha_com == 1) or \
-            (escolha_J1 == 3 and escolha_com == 2):
+        elif (escolha_J1 == 'Pedra' and escolha_com == 'Tesoura') or \
+            (escolha_J1 == 'Papel' and escolha_com == 'Pedra') or \
+            (escolha_J1 == 'Tesoura' and escolha_com == 'Papel'):
             
             print('\nVOCÊ VENCEU!')
 
@@ -136,9 +136,9 @@ while True:
             if escolha_J1 == escolha_J2:
                 print('\nEMPATE!')
 
-            elif (escolha_J1 == 1 and escolha_com == 3) or \
-                (escolha_J1 == 2 and escolha_com == 1) or \
-                (escolha_J1 == 3 and escolha_com == 2):
+            elif (escolha_J1 == 'Pedra' and escolha_com == 'Tesoura') or \
+                (escolha_J1 == 'Papel' and escolha_com == 'Pedra') or \
+                (escolha_J1 == 'Tesoura' and escolha_com == 'Papel'):
                 print(f'\n{jogador_1} GANHOU!')
 
             else:

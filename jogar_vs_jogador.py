@@ -63,3 +63,9 @@ def j1_vs_j2():
 
     else:
         print(f'\n{jogador_2} GANHOU!')
+
+    print('\n[1] - Jogar novamente')
+    print('[2] - Sair')
+
+    opcao = int(input('\nAlternativa: '))
+    return opcao

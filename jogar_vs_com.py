@@ -54,3 +54,9 @@ def j1_vs_com():
 
     else:
         print(f'\n{red}VOCÊ PERDEU!{green}')
+
+    print('\n[1] - Jogar novamente')
+    print('[2] - Sair')
+
+    opcao = int(input('\nAlternativa: '))
+    return opcao

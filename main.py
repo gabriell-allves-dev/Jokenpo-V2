@@ -8,12 +8,31 @@ opcao = int(input('\nAlternativa: '))
 
 # Jogador 1 VS Computador
 if opcao == 1:
-    pass
+
+    print('\n' + '='*6 + 'SUA ESCOLHA' + '='*6)
+
+    print('\n[1] - Pedra')
+    print('[2] - Papel')
+    print('[3] - Tesoura')
+
+    opcao = int(input('\nAlternativa: '))
+
+    if opcao == 1:
+        pass
+
+    elif opcao == 2:
+        pass
+
+    elif opcao == 3:
+        pass
+
+    else:
+        pass
 
 # Jogador 1 VS Jogador 2
 elif opcao == 2:
-    pass 
+    print('AVISO: EM PRODUÇÃO!') 
 
 # Encerrar execução
 elif opcao == 3:
-    pass
+    print('AVISO: EM PRODUÇÃO!') 

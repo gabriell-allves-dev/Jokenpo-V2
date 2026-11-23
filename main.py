@@ -76,9 +76,25 @@ while True:
 
 # Jogador 1 VS Jogador 2
     elif opcao == 2:
-        print('Modo Jogador 1 VS Jogador 2 em desenvolvimento.')
-        break
+        jogador_1 = input('\nNome do jogador 1: ')
+        jogador_2 = input('\nNome do jogador 2:')
 
+        print('\n' + '='*6 + 'Escolha do jogador 1' + '='*6)
+
+        print('\n[1] - Pedra')
+        print('[2] - Papel')
+        print('[3] - Tesoura')
+
+        escolha_J1 = int(input('\nAlternativa: '))
+
+        print('\n' + '='*6 + 'Escolha do jogador 2' + '='*6)
+        
+        print('\n[1] - Pedra')
+        print('[2] - Papel')
+        print('[3] - Tesoura')
+
+        escolha_J2 = int(input('\nAlternativa: '))
+        
 # Encerrar execução
     elif opcao == 3:
         print('AVISO: EM PRODUÇÃO!') 

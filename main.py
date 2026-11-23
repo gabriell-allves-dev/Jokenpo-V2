@@ -12,25 +12,30 @@ opcao = int(input('\nAlternativa: '))
 while True:
     if opcao == 1:
 
-        print('\n' + '='*6 + 'SUA ESCOLHA' + '='*6)
+        while True:
+            print('\n' + '='*6 + 'SUA ESCOLHA' + '='*6)
 
-        print('\n[1] - Pedra')
-        print('[2] - Papel')
-        print('[3] - Tesoura')
+            print('\n[1] - Pedra')
+            print('[2] - Papel')
+            print('[3] - Tesoura')
 
-        opcao = int(input('\nAlternativa: '))
+            opcao = int(input('\nAlternativa: '))
 
-        if opcao == 1:
-            escolha_J1 = 'Pedra'
+            if opcao == 1:
+                escolha_J1 = 'Pedra'
+                break
 
-        elif opcao == 2:
-            escolha_J1 = 'Papel'
+            elif opcao == 2:
+                escolha_J1 = 'Papel'
+                break
 
-        elif opcao == 3:
-            escolha_J1 = 'Tesoura'
+            elif opcao == 3:
+                escolha_J1 = 'Tesoura'
+                break
 
-        else:
-            pass
+            else:
+                print('Valor inválido!')
+                continue
 
         computador = random.randint(1,3)
 
@@ -74,27 +79,84 @@ while True:
 
         
 
-# Jogador 1 VS Jogador 2
+    # Jogador 1 VS Jogador 2
     elif opcao == 2:
-        jogador_1 = input('\nNome do jogador 1: ')
-        jogador_2 = input('\nNome do jogador 2:')
-
-        print('\n' + '='*6 + 'Escolha do jogador 1' + '='*6)
-
-        print('\n[1] - Pedra')
-        print('[2] - Papel')
-        print('[3] - Tesoura')
-
-        escolha_J1 = int(input('\nAlternativa: '))
-
-        print('\n' + '='*6 + 'Escolha do jogador 2' + '='*6)
+        jogador_1 = input('\nNome do jogador 1: ').upper()
+        jogador_2 = input('\nNome do jogador 2: ').upper()
         
-        print('\n[1] - Pedra')
-        print('[2] - Papel')
-        print('[3] - Tesoura')
+        while True:
+            while True:
+                print('\n' + '='*6 + 'Escolha do jogador 1' + '='*6)
 
-        escolha_J2 = int(input('\nAlternativa: '))
-        
+                print('\n[1] - Pedra')
+                print('[2] - Papel')
+                print('[3] - Tesoura')
+
+                opcao_J1 = int(input('\nAlternativa: '))
+
+                if opcao_J1 == 1:
+                    escolha_J1 = 'Pedra'
+                    break
+
+                elif opcao_J1 == 2:
+                    escolha_J1 = 'Papel'
+                    break
+
+                elif opcao_J1 == 3:
+                    escolha_J1 = 'Tesoura'
+                    break
+
+                else:
+                    print('\nValor inválido!')
+
+            while True:
+                print('\n' + '='*6 + 'Escolha do jogador 2' + '='*6)
+                
+                print('\n[1] - Pedra')
+                print('[2] - Papel')
+                print('[3] - Tesoura')
+
+                opcao_J2 = int(input('\nAlternativa: '))
+
+                if opcao_J2 == 1:
+                    escolha_J2 = 'Pedra'
+                    break
+
+                elif opcao_J2 == 2:
+                    escolha_J2 = 'Papel'
+                    break
+
+                elif opcao_J2 == 3:
+                    escolha_J2 = 'Tesoura'
+                    break
+
+                else:
+                    print('\nValor inválido!')
+
+            if escolha_J1 == escolha_J2:
+                print('\nEMPATE!')
+
+            elif (escolha_J1 == 1 and escolha_com == 3) or \
+                (escolha_J1 == 2 and escolha_com == 1) or \
+                (escolha_J1 == 3 and escolha_com == 2):
+                print(f'\n{jogador_1} GANHOU!')
+
+            else:
+                print(f'\n{jogador_2} GANHOU!')
+
+            print('\n[1] - Jogar novamente')
+            print('[2] - Sair')
+
+            opcao = int(input('\nAlternativa: '))
+
+            if opcao == 1:
+                continue
+
+            elif opcao == 2:
+                break
+                
+
+
 # Encerrar execução
     elif opcao == 3:
         print('AVISO: EM PRODUÇÃO!') 

@@ -1,4 +1,4 @@
-from functions import menu, j1_vs_com, j1_vs_j2
+from functions import menu, j1_vs_com, j1_vs_j2, finalizar
 import time
 import sys
 
@@ -34,12 +34,7 @@ while True:
 
     # Encerrar execução
     elif opcao == 3:
-        time.sleep(1.5)
-        print(f'\n{red}Finalizando execução...{green}')
-        time.sleep(2.5)
-        print(f'\n{red}Finalizado!{green}')
-        time.sleep(1.5)
-        sys.exit()
+        finalizar()
 
     else:
         print(f'{red}Valor inválido!{green}')

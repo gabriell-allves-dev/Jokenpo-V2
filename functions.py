@@ -162,7 +162,7 @@ def j1_vs_j2():
 
         caixa()
         print('='*6 + 'Escolha do jogador 1' + '='*6)
-
+        caixa()
         print()
 
         caixa()
@@ -177,7 +177,7 @@ def j1_vs_j2():
         print()
 
         caixa()
-        opcao_J1 = int(pwinput.pwinput('\nAlternativa: ', mask = '*'))
+        opcao_J1 = int(pwinput.pwinput('Alternativa: ', mask = '*'))
         caixa()
         time.sleep(0.3)
 
@@ -200,7 +200,7 @@ def j1_vs_j2():
         time.sleep(1)
         print()
         caixa()
-        print('\n' + '='*6 + 'Escolha do jogador 2' + '='*6)
+        print('='*6 + 'Escolha do jogador 2' + '='*6)
         caixa()
         
         print()
@@ -293,3 +293,26 @@ def j1_vs_j2():
     opcao = int(input('Alternativa: '))
     caixa()    
     return opcao
+
+def finalizar():
+    import time
+    import sys
+
+    red = '\033[1:31m'
+    green = '\033[1;32m'
+    
+    print(f'{red}')
+
+    time.sleep(1.5)
+    caixa()
+    print('Finalizando execução...')
+    caixa()
+    print()
+    time.sleep(2.5)
+    caixa()
+    time.sleep(0.3)
+    print('Finalizado!')
+    caixa()
+    time.sleep(0.2)
+    print(f'{green}')
+    sys.exit()

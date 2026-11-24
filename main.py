@@ -2,6 +2,7 @@ from menu import menu
 from jogar_vs_com import j1_vs_com
 from jogar_vs_jogador import j1_vs_j2
 import time
+import sys
 
 green = '\033[1;32m'
 red = '\033[1;31m'
@@ -35,8 +36,12 @@ while True:
 
     # Encerrar execução
     elif opcao == 3:
-        print(f'{red}AVISO: EM PRODUÇÃO!{green}')
-        break
+        time.sleep(1.5)
+        print(f'\n{red}Finalizando execução...{green}')
+        time.sleep(2.5)
+        print(f'\n{red}Finalizado!{green}')
+        time.sleep(1.5)
+        sys.exit()
 
     else:
         print(f'{red}Valor inválido!{green}')

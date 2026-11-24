@@ -1,6 +1,4 @@
-from menu import menu
-from jogar_vs_com import j1_vs_com
-from jogar_vs_jogador import j1_vs_j2
+from functions import menu, j1_vs_com, j1_vs_j2
 import time
 import sys
 

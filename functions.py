@@ -1,3 +1,7 @@
+def caixa():
+    print('='*30)
+    return None
+
 def menu():
     green = '\033[1;32m'
     import time

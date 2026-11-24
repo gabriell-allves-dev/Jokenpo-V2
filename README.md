@@ -21,9 +21,12 @@ Um jogo de Jokenpô (Pedra, Papel e Tesoura) desenvolvido em Python, no qual o j
 
 1. Clone este repositório.
 2. Abra a pasta do projeto.
-3. Execute o arquivo:
+3. execute o arquivo:
 
-   **Executar**
+   **instalar_pwinput**
+4. Execute o arquivo:
+
+   **executar**
 
 ## 🎯 Objetivo
 

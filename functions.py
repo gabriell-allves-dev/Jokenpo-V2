@@ -5,9 +5,10 @@ def caixa():
 def menu():
     green = '\033[1;32m'
     import time
+    print(f'{green}')
     
     caixa()
-    print(f'{green}='*6 + 'JOKENPÔ - v2' + '='*6)
+    print('='*6 + 'JOKENPÔ - v2' + '='*6)
     caixa()
     time.sleep(1.5)
 

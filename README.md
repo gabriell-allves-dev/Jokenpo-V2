@@ -15,6 +15,7 @@ Um jogo de Jokenpô (Pedra, Papel e Tesoura) desenvolvido em Python, no qual o j
 - Python 3
 - Módulo `random`
 - Módulo `time`
+- Módulo `pwinput`
 
 ## 💻 Como executar
 

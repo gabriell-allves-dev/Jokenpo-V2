@@ -1,6 +1,7 @@
 def j1_vs_j2():
     green = '\033[1;32m'
     red = '\033[1;31m'
+    import pwinput
 
     jogador_1 = input('\nNome do jogador 1: ').upper()
     jogador_2 = input('\nNome do jogador 2: ').upper()
@@ -12,7 +13,7 @@ def j1_vs_j2():
         print('[2] - Papel')
         print('[3] - Tesoura')
 
-        opcao_J1 = int(input('\nAlternativa: '))
+        opcao_J1 = int(pwinput.pwinput('\nAlternativa: ', mask = '*'))
 
         if opcao_J1 == 1:
             escolha_J1 = 'Pedra'
@@ -36,7 +37,7 @@ def j1_vs_j2():
         print('[2] - Papel')
         print('[3] - Tesoura')
 
-        opcao_J2 = int(input('\nAlternativa: '))
+        opcao_J2 = int(pwinput.pwinput('\nAlternativa: ', mask = '*'))
 
         if opcao_J2 == 1:
             escolha_J2 = 'Pedra'
@@ -54,14 +55,20 @@ def j1_vs_j2():
             print(f'\n{red}Valor inválido!{green}')
 
     if escolha_J1 == escolha_J2:
+        print(f'{jogador_1} escolheu: {escolha_J1}')
+        print(f'{jogador_2} escolheu: {escolha_J2}')
         print('\nEMPATE!')
 
     elif (escolha_J1 == 'Pedra' and escolha_J2 == 'Tesoura') or \
         (escolha_J1 == 'Papel' and escolha_J2 == 'Pedra') or \
         (escolha_J1 == 'Tesoura' and escolha_J2 == 'Papel'):
+        print(f'{jogador_1} escolheu: {escolha_J1}')
+        print(f'{jogador_2} escolheu: {escolha_J2}')
         print(f'\n{jogador_1} GANHOU!')
 
     else:
+        print(f'{jogador_1} escolheu: {escolha_J1}')
+        print(f'{jogador_2} escolheu: {escolha_J2}')
         print(f'\n{jogador_2} GANHOU!')
 
     print('\n[1] - Jogar novamente')
